@@ -1,6 +1,6 @@
 ﻿Console.Clear();
 double namderA = 1;
-string s;
+string s ;
 Console.Write("Введите число А (можно дробное через ,) - ");
 s = Console.ReadLine();
 namderA = Convert.ToDouble(s);
