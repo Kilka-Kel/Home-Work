@@ -28,6 +28,6 @@ else if (namderA < namderB)
 else
 {
     Console.ForegroundColor = ConsoleColor.DarkRed;
-    Console.Write("Хотел меня подловить, ХА ХА, не вышло ");
+    Console.Write("Хотел меня подловить, ХА ХА, не вышло! Они равны");
 
 }    
