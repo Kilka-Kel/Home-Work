@@ -23,11 +23,10 @@ else if (namderA < namderB)
 {
     Console.ForegroundColor = ConsoleColor.DarkGreen;
     Console.Write("В больше А");
-
-}  
+}
 else
 {
     Console.ForegroundColor = ConsoleColor.DarkRed;
     Console.Write("Хотел меня подловить, ХА ХА, не вышло! Они равны");
 
-}    
+}
