@@ -3,7 +3,7 @@ Console.WriteLine("По заданному номеру дня недели вы
 
 int namderA = 1;
 string s;
-Console.Write("Введите число соответствующее номеру недели - ");
+Console.Write("Введите число соответствующее номеру дня недели - ");
 s = Console.ReadLine();
 namderA = Convert.ToInt32(s);
 
