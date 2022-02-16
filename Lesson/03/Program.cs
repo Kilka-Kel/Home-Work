@@ -64,25 +64,61 @@
 //     System.Console.WriteLine();
 // }
 
-string text = "Шел Шива по Шоссе сокрушая сущее, "
-            + "А на встречу Саша шла, круглое сусущая";
+
+//Работа с текстом
+// string text = "Шел Шива по Шоссе сокрушая сущее, "
+//             + "А на встречу Саша шла, круглое сусущая";
 
 // sting s "qwerty"
 //          012
 //s[3]//r
 
-string replase(string text, char oldValue, char newValue)
-{
-    string result = string.Empty;
-    int lenght = text.Length;
-    for (int i = 0; i < lenght; i++)
-    {
-        if (text[i] == oldValue) result = result + $"{newValue}";
-        else result = result + $"{text[i]}";
-    }
+// string replase(string text, char oldValue, char newValue)
+// {
+//     string result = string.Empty;
+//     int lenght = text.Length;
+//     for (int i = 0; i < lenght; i++)
+//     {
+//         if (text[i] == oldValue) result = result + $"{newValue}";
+//         else result = result + $"{text[i]}";
+//     }
 
-    return result;
+//     return result;
+// }
+
+// string newText = replase(text, 'Ш', 'ш');
+// System.Console.WriteLine(newText);
+
+
+int[] arr = { 1, 5, 4, 3, 2, 6, 7, 1, 1 };
+
+void PrintArray(int[] array)
+{
+    int count = array.Length;
+    for (int i = 0; i < count; i++)
+    {
+        System.Console.Write($"{array[i]} ");
+    }
+    System.Console.WriteLine();
 }
 
-string newText = replase(text, 'Ш', 'ш');
-System.Console.WriteLine(newText);
+
+void selectionSort(int[] array)
+{
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        int minPosition = i;
+
+        for (int j = i + 1; j < array.Length; j++)
+        {
+            if (array[j] < array[minPosition]) minPosition = j;
+        }
+
+        int temp = array[i];
+        array[i] = array[minPosition];
+        array[minPosition] = temp;
+    }
+}
+PrintArray(arr);
+selectionSort(arr);
+PrintArray(arr);
