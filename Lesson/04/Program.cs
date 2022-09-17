@@ -126,7 +126,7 @@ Double Febonachi(int n)
     else return Febonachi(n - 1) + Febonachi(n - 2);
 }
 
-for (int i = 1; i < 50; i++)
+for (int i = 1; i < 10; i++) //вместо 10 было 50
 {
     System.Console.WriteLine($"f({i}) = {Febonachi(i)}");
 }

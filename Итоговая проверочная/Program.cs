@@ -5,16 +5,11 @@ Console.WriteLine("Сначала выводим наш массив");
 
 
 string [] Str= { "Mon", "Tuesd", "Wednesday", "Thirsday", "Friday", "Saturday","Sun" };
-int size = Str.Length;
-// int step2 = 0;
-// while (step2!=size)
-// {
+string[] str2 = new string[Str.Length];
+// int size = Str.Length;
+// int step1 = 0;
 
-//     System.Console.Write($"{Str[step2]} ");
-//     step2++;
-// }
-
-void PrintArray(string[] coll)//печатаем массив
+void PrintStr(string[] coll)//печатаем массив
 {
     int lenghtPrint = coll.Length;
     int indexPrint = 0;
@@ -26,5 +21,30 @@ void PrintArray(string[] coll)//печатаем массив
         System.Console.WriteLine();
 }
 
-PrintArray(Str);
+PrintStr(Str);
 
+// for (int step = 0;step<Str.Length; step++)
+//     System.Console.Write($"{Str[step]} ");
+//     Console.WriteLine();
+
+// for (int step = 0;step<Str.Length; step++)
+//     if(Str[step].Length<4) 
+//     {
+//         System.Console.Write($"{Str[step]} ");
+//     }
+//     else
+//     {
+//         System.Console.Write($" ");
+//     }
+
+for (int step = 0;step<Str.Length; step++)
+    if(Str[step].Length<4) 
+    {
+        str2[step]=Str[step];
+    }
+    else
+    {
+        str2[step]=string.Empty;
+    }
+
+    PrintStr(str2);
